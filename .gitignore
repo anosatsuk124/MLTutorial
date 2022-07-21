@@ -3,3 +3,5 @@
 /Data
 /assets/*
 !/assets/download.sh
+.fake
+.config
