@@ -1,0 +1,5 @@
+/**/.ipynb_checkpoints
+.paket
+/Data
+/assets/*
+!/assets/download.sh
