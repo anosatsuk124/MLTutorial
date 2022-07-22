@@ -1,8 +1,0 @@
-/**/.ipynb_checkpoints
-.paket
-/Data
-/assets/*
-!/assets/download.sh
-.fake
-.config
-.virtual_documents
