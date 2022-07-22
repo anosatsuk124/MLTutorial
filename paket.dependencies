@@ -5,3 +5,5 @@ framework: net7.0, netstandard2.0, netstandard2.1
 generate_load_scripts: true
 nuget FSharp.Core
 nuget Microsoft.ML
+nuget Plotly.NET
+nuget SixLabors.ImageSharp
