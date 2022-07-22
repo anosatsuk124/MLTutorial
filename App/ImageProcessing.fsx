@@ -33,7 +33,7 @@ let ImageShow (img: Image) =
     )
 
 // %%
-imageShow image
+ImageShow image
 
 // %%
 let image2 = image.Clone(ignore)
