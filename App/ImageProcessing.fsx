@@ -52,8 +52,22 @@ ImageShow image2
 let image3 = image.Clone(ignore)
 
 // %%
-image3.ProcessPixelRows (fun accessor ->
-    printfn $"{accessor.GetRowSpan(0).Length}" 
+image3.ProcessPixelRows (fun rows ->
+    for y in 0..rows.Height-1 do
+        let row = rows.GetRowSpan(y)
+        for x in 0..row.Length-1 do
+            let pixel = row[x]
+            let (R, G, B, A) = (pixel.R, pixel.G, pixel.B, pixel.A)
+            row[x] <- PixelFormats.Rgba32(B, G, R, A)
     |> ignore)
+
+// %%
+ImageShow image3
+
+// %%
+[
+ImageShow image
+ImageShow image3
+] |> Chart.Grid (1,2)
 
 // %%
